@@ -170,8 +170,9 @@ async function sendEmail(buyerData) {
       html: emailHtml(name)
     }
     sgMail.send(msg)
+    console.log('yaaaaaaa')
   } catch (error) {
-    console.log(error)
+    console.log('aaaahhhh')
   }
 }
 
