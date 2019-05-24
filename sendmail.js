@@ -163,7 +163,7 @@ async function sendEmail(buyerData) {
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
       to: email,
-      from: '"Kinky-Boots 👠" <Kinky-Boots@kb.com>',
+      from: 'Kinky-Boots 👠 <Kinky-Boots@kb.com>',
       subject: `Hello ${name} 🎟️️`,
       html: emailHtml(name)
     }
