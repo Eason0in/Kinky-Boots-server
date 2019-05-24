@@ -39,9 +39,9 @@ const bookCreate = book =>
     books
       .create(book)
       .then(() => {
+        sendEmail(book)
         resolve('')
         // res.redirect('/')
-        sendEmail(book)
       })
       .catch(error => {
         reject(error)
